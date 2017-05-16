@@ -9,7 +9,6 @@ RUN docker-php-ext-install zip opcache
 
 # Install composer
 RUN curl -sS https://getcomposer.org/installer | php
-RUN php composer.phar install
 
 # Install node.js
 RUN curl -sL https://deb.nodesource.com/setup_6.x | bash 
