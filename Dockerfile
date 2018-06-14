@@ -40,6 +40,7 @@ RUN apt-get update \
         msodbcsql17 \
         unixodbc-dev \
     && pecl install pdo_sqlsrv \
+    && echo extension=pdo_sqlsrv.so >> /usr/local/etc/php/conf.d/30-pdo_sqlsrv.ini \
 
     # Composer
     && curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer \
