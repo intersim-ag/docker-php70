@@ -16,6 +16,7 @@ RUN apt-get update \
         libpng-dev \
         libtidy-dev \
         locales \
+        ssh-client \
 
     # PHP extensions
     && docker-php-ext-configure gd --with-freetype-dir=/usr/include/ --with-jpeg-dir=/usr/include/ \
